@@ -1,0 +1,261 @@
+<!doctype html>
+<html lang="en">
+
+<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AngBots - Login</title>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Yenilikçi bot sistemimiz ile hızlıca Discord botunuzu satın alın ve aktive edin!" name="description">
+    <meta content="" name="keywords">
+    <meta content="" name="author">
+    <meta name="author" content="pixelcave">
+    <meta name="robots" content="noindex, nofollow">
+    <link rel="shortcut icon" href="./assets/media/logonew.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="./assets/media/logonew.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/media/logonew.png">
+    <link rel="stylesheet" id="css-main" href="./assets/css/oneui.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.7.1/css/all.css">
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.7.1/css/sharp-duotone-thin.css">
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.7.1/css/sharp-duotone-solid.css">
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.7.1/css/sharp-duotone-regular.css">
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.7.1/css/sharp-duotone-light.css">
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.7.1/css/sharp-thin.css">
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.7.1/css/sharp-solid.css">
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.7.1/css/sharp-regular.css">
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.7.1/css/sharp-light.css">
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.7.1/css/duotone-thin.css">
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.7.1/css/duotone-regular.css">
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.7.1/css/duotone-light.css">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+
+        #background-video {
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            min-width: 100%;
+            min-height: 100%;
+            width: auto;
+            height: auto;
+            z-index: -1;
+            background-size: cover;
+        }
+
+        #page-container {
+            position: relative;
+            z-index: 1;
+        }
+
+
+        .swal2-popup {
+            background-color: #070b1e !important;
+            color: #fff;
+        }
+
+        .swal2-title {
+            color: #fff;
+        }
+
+        .swal2-html-container {
+            color: #fff;
+        }
+
+        .swal2-input,
+        .swal2-textarea {
+            background-color: #333 !important;
+            color: #fff !important;
+            border: 1px solid #555;
+        }
+
+        .swal2-confirm {
+            background-color: #d33 !important;
+            color: #fff !important;
+        }
+
+        .swal2-cancel {
+            background-color: #555 !important;
+            color: #fff !important;
+        }
+
+        .swal2-popup {
+            font-family: Arial, sans-serif;
+        }
+
+        .swal2-title {
+            color: #333;
+            font-size: 1.5em;
+        }
+
+        .swal2-html-container {
+            color: #666;
+            font-size: 1.1em;
+        }
+
+        .swal2-confirm {
+            background-color: #007bff;
+            border-color: #007bff;
+            color: white;
+            font-size: 1em;
+            padding: 10px 20px;
+            border-radius: 5px;
+        }
+
+        .swal2-confirm:hover {
+            background-color: #0056b3;
+            border-color: #004085;
+        }
+
+        .swal2-popup {
+            border-radius: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <video autoplay muted loop id="background-video">
+        <source src="./assets/media/register.mp4" type="video/mp4">
+        Yazılım Var Bot Var Neye Bakıyon Yarram
+    </video>
+
+    <div id="page-container">
+        <main id="main-container">
+            <div class="hero-static d-flex align-items-center">
+                <div class="w-100">
+                    <div class="content content-full">
+                        <div class="row g-0 justify-content-center">
+                            <div class="col-md-8 col-lg-6 col-xl-4 py-4 px-4 px-lg-5">
+                                <div class="text-center">
+                                    <p class="mb-2">
+                                        <i class="fa fa-2x fa-circle-notch text-primary"></i>
+                                    </p>
+                                    <h1 class="h4 mb-1">
+                                        <font color="white">Login</font>
+                                    </h1>
+                                    <p class="fw-medium text-muted mb-3">
+                                        <font color="white">Would you like to see the Discord BOT system reach a
+                                            different level with AngBots?</font>
+                                    </p>
+                                </div>
+                                <div class="py-3">
+                                    <div class="mb-4">
+                                        <input type="text" class="form-control form-control-lg form-control-alt"
+                                            id="login-username" name="login-username" placeholder="Username">
+                                    </div>
+                                    <div class="mb-4">
+                                        <input type="password" class="form-control form-control-lg form-control-alt"
+                                            id="login-password" name="login-password" placeholder="Password">
+                                    </div>
+                                    <div class="mb-4">
+                                        <div class="d-md-flex align-items-md-center justify-content-md-between">
+                                            <div class="py-2">
+                                                <a class="fs-sm fw-medium" href="../register">
+                                                    <font color="white">Don't you have an account?</font>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button type="button" class="btn w-100 btn-alt-primary" id="login-button">
+                                        <i class="fa fa-fw fa-sign-in-alt me-1 opacity-50"></i> Login
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="./assets/js/oneui.app.min.js"></script>
+    <script src="./assets/js/lib/jquery.min.js"></script>
+    <script src="./assets/js/plugins/jquery-validation/jquery.validate.min.js"></script>
+    <script src="./assets/js/pages/op_auth_signin.min.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            const message = "Please Log In Again!";
+            if (message != "") {
+                //new swal("INFORMATION", message, "error");
+            } else {
+                console.log("no message");
+            }
+            bakim = false;
+
+            $("#login-button").click(function () {
+                const username = $("#login-username").val();
+                const password = $("#login-password").val();
+
+                if (bakim == true) {
+                    new swal("CARE", "We are currently under maintenance, try again later.", "error");
+                    return false;
+                }
+
+                if(!username || !password) return new swal("HATA", "Please fill in all fields!", "error");
+
+                performCaptchaValidation(username, password);
+            });
+
+            function performCaptchaValidation(username, password) {
+
+                $.ajax({
+                    url: "../api/login",
+                    method: "POST",
+                    headers: {
+                        "Content-Type": "application/x-www-form-urlencoded"
+                    },
+                    data: {
+                        "username": username,
+                        "password": password
+                    },
+                    success: function (response) {
+                        if (response.status == false) {
+                            new swal("HATA!", response.message, "error");
+                        } else {
+                            Swal.fire({
+                                title: 'ENTERING!',
+                                text: 'You are redirected to the home page!',
+                                icon: 'info',
+                                timer: 3000,
+                                timerProgressBar: true,
+                                showCancelButton: false,
+                                showConfirmButton: false,
+                                didOpen: () => {
+                                    Swal.showLoading();
+                                    const popup = Swal.getPopup();
+                                    popup.querySelector('.swal2-title').style.color = '#fff';
+                                    popup.querySelector('.swal2-html-container').style.color = '#fff';
+                                    popup.querySelector('.swal2-popup').style.backgroundColor = '#070b1e';
+                                }
+                            }).then((result) => {
+                                window.location.href = "../";
+                            }).catch((err) => {
+                                console.error("Swal error:", err);
+                            });
+
+
+
+                            // swal("BAŞARILI", "GİRİŞ YAPILIYOR!", "info");
+                            // setTimeout(function() {
+                            //     window.location.href = "./dashboard";
+                            // }, 1000);
+                        }
+                    },
+                    error: function (xhr, status, error) {
+                        new swal("ERROR!", "Server error. Please try again later.", "error");
+                    }
+                });
+            }
+        });
+    </script>
+</body>
+
+</html>

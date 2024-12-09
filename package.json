@@ -1,0 +1,22 @@
+{
+  "name": "panel.angbots.com",
+  "version": "1.0.0",
+  "description": "Ang Bots kimmişde bana kafa tutucak :D",
+  "main": "angbots.js",
+  "scripts": {
+    "test": "node angbots.js"
+  },
+  "author": "emiromer44",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^1.7.9",
+    "crypto": "^1.0.1",
+    "ejs": "^3.1.10",
+    "express": "^4.21.2",
+    "express-session": "^1.18.1",
+    "fs": "^0.0.1-security",
+    "nukleon": "^0.0.2",
+    "path": "^0.12.7",
+    "sha256": "^0.2.0"
+  }
+}
